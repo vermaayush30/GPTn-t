@@ -1,0 +1,54 @@
+:root {
+    /* Space layers */
+    --bg-void: #0a0b14;
+    --bg-panel: #101220;
+    --bg-elevated: #1a1c2c;
+    --bg-elevated-hover: #22243a;
+
+    /* Accents */
+    --accent-gold: #e8b454;
+    --accent-gold-dim: rgba(232, 180, 84, 0.15);
+    --accent-violet: #7c6ff0;
+
+    /* Text */
+    --text-primary: #ecEaf5;
+    --text-secondary: #9c9fb5;
+    --text-faint: #6b6e85;
+
+    /* Structure */
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --danger: #f87171;
+
+    --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+    --font-body: "Inter", "Segoe UI", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-void);
+}
+
+.app {
+    background-color: var(--bg-void);
+    display: flex;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
