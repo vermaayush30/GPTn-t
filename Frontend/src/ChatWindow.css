@@ -56,13 +56,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1.5rem;
+    padding: 0 1rem 1.5rem;
+    box-sizing: border-box;
 }
 
 .inputBox {
     width: 100%;
     position: relative;
-    max-width: 620px;
+    max-width: 820px;
     display: flex;
     justify-content: space-between;
     align-items: center;
