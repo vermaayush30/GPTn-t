@@ -3,6 +3,7 @@ import { useContext, useEffect } from "react";
 import { MyContext } from "./MyContext.jsx";
 import { API_URL } from "./config.js";
 import {v1 as uuidv1} from "uuid";
+import logo from "./Assests/orion.png";
 
 function Sidebar() {
     const {allThreads, setAllThreads, currThreadId, setNewChat, setPrompt, setReply, setCurrThreadId, setPrevChats, isSidebarOpen, setIsSidebarOpen, token} = useContext(MyContext);
@@ -80,7 +81,7 @@ function Sidebar() {
             <section className={`sidebar ${isSidebarOpen ? "sidebarOpen" : ""}`}>
                 <div className="sidebarTop">
                     <button className="newChatBtn" onClick={createNewChat}>
-                        <img src="src/Assests/orion.png" alt="OrionGPT logo" className="logo"></img>
+                        <img src={logo} alt="OrionGPT logo" className="logo"></img>
                         <span className="wordmark">GPTn't</span>
                         <span><i className="fa-solid fa-pen-to-square"></i></span>
                     </button>
