@@ -78,9 +78,9 @@ input {
     width: 100%;
     border: 1px solid var(--border-subtle);
     background-color: var(--bg-elevated);
-    padding: 18px 55px 18px 20px;
+    padding: 13px 50px 13px 18px;
     font-size: 0.85rem;
-    border-radius: 16px;
+    border-radius: 14px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 10px 30px;
 }
 
@@ -94,11 +94,11 @@ input:focus {
 
 #submit {
     cursor: pointer;
-    height: 32px;
-    width: 32px;
-    font-size: 13px;
+    height: 28px;
+    width: 28px;
+    font-size: 12px;
     position: absolute;
-    right: 12px;
+    right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
