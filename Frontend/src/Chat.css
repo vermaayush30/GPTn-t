@@ -1,8 +1,8 @@
 .chats {
-    max-width: 700px;
+    max-width: 820px;
     width: 100%;
     overflow-y: auto;
-    padding: 2rem 1rem 8rem;
+    padding: 2rem 1.5rem 8rem;
     flex: 1;
 }
 
@@ -10,7 +10,7 @@
     display: flex;
     justify-content: flex-end;
     font-size: 0.9rem;
-    margin-bottom: 1.1rem;
+    margin-bottom: 1.4rem;
 }
 
 .gptDiv {
@@ -18,8 +18,8 @@
     align-items: flex-start;
     gap: 12px;
     text-align: left;
-    font-size: 0.9rem;
-    margin-bottom: 1.1rem;
+    font-size: 0.95rem;
+    margin-bottom: 1.4rem;
 }
 
 .gptAvatar {
@@ -39,23 +39,103 @@
 .gptContent {
     min-width: 0;
     flex: 1;
+    line-height: 1.65;
 }
 
 .userMessage {
     background-color: var(--bg-elevated);
     padding: 10px 18px;
     border-radius: 14px;
-    max-width: 500px;
+    max-width: 600px;
     width: fit-content;
     font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Markdown typography inside assistant replies */
+
+.gptContent p {
+    margin: 0 0 0.9rem;
+}
+
+.gptContent p:last-child {
+    margin-bottom: 0;
+}
+
+.gptContent h1,
+.gptContent h2,
+.gptContent h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 1.4rem 0 0.6rem;
+    line-height: 1.3;
+}
+
+.gptContent h1:first-child,
+.gptContent h2:first-child,
+.gptContent h3:first-child {
+    margin-top: 0;
+}
+
+.gptContent h1 { font-size: 1.3rem; }
+.gptContent h2 { font-size: 1.15rem; }
+.gptContent h3 { font-size: 1.05rem; }
+
+.gptContent ul,
+.gptContent ol {
+    margin: 0 0 0.9rem;
+    padding-left: 1.4rem;
+}
+
+.gptContent li {
+    margin-bottom: 0.35rem;
+}
+
+.gptContent li::marker {
+    color: var(--text-faint);
+}
+
+.gptContent strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.gptContent a {
+    color: var(--accent-gold);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.gptContent blockquote {
+    border-left: 2px solid var(--accent-gold-dim);
+    margin: 0 0 0.9rem;
+    padding: 0.2rem 0 0.2rem 1rem;
+    color: var(--text-secondary);
+}
+
+.gptContent code {
+    background-color: var(--bg-elevated);
+    padding: 0.15em 0.4em;
+    border-radius: 5px;
+    font-size: 0.85em;
+    font-family: "Menlo", "Consolas", monospace;
+}
+
+.gptContent pre {
+    margin: 0 0 1rem;
+    white-space: pre-wrap;
+}
+
+.gptContent pre code {
+    background-color: transparent;
+    padding: 0;
+    font-size: 0.85em;
 }
 
 .hljs {
-    border-radius: 14px !important;
-}
-
-pre {
-    white-space: pre-wrap;
+    border-radius: 12px !important;
+    padding: 1rem !important;
 }
 
 /* Empty state — Orion's Belt signature */
