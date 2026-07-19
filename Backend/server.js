@@ -25,7 +25,7 @@ app.use("/api", chatRoutes);
 
 
 app.get("/", (req, res) => {
-    res.send("OrionGPT backend is running");
+    res.send("GPTn't backend is running");
 });
 
 
