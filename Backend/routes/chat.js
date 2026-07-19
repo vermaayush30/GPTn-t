@@ -1,6 +1,6 @@
 import express from "express";
 import Thread from "../models/Thread.js";
-import getGeminiAPIResponse from "../utils/OrionGPT.js";
+import getGeminiAPIResponse from "../utils/GPTn't.js";
 import authMiddleware from "../middleware/authMiddleware.js";
 
 

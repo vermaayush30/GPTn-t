@@ -81,7 +81,7 @@ function Sidebar() {
             <section className={`sidebar ${isSidebarOpen ? "sidebarOpen" : ""}`}>
                 <div className="sidebarTop">
                     <button className="newChatBtn" onClick={createNewChat}>
-                        <img src={logo} alt="OrionGPT logo" className="logo"></img>
+                        <img src={logo} alt="GPTn't logo" className="logo"></img>
                         <span className="wordmark">GPTn't</span>
                         <span><i className="fa-solid fa-pen-to-square"></i></span>
                     </button>
